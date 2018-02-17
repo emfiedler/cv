@@ -1,0 +1,140 @@
+\documentclass[a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{german}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{titling}
+\usepackage{footnote}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, 
+	urlcolor=blue,	
+}
+\usepackage{titlesec}
+\titleformat{\section}
+{\huge}
+{}
+{0em}
+{}[\titlerule]
+
+\renewcommand{\maketitle}{
+\begin{flushleft}
+{\Huge
+\theauthor} \\
+\vspace{2mm}
+\begin{tabular}{@{} l l}
+	E-mail: &maxfiedler@mailforce.net\\
+	Telefon: &+44 7761 690 067
+\end{tabular}
+
+\end{flushleft}
+}
+
+\newcommand{\entry}[4]{
+
+	\begin{minipage}[t]{.20\textwidth}
+		\hfill \textsc{#1}
+
+	\end{minipage}
+	\hfill\vline\hfill
+	\begin{minipage}[t]{.75\textwidth}
+		\textbf{#2} \\ 
+		\textit{#3}    
+		#4
+
+	\end{minipage} 
+	\vspace{.25cm}
+
+}
+
+\newcommand{\nentry}[2]{
+
+	\begin{minipage}[t]{.20\textwidth}
+		\hfill \textsc{#1}
+
+	\end{minipage}
+	\hfill\vline\hfill
+	\begin{minipage}[t]{.75\textwidth}
+		#2 
+
+	\end{minipage}
+	\vspace{.25cm} 
+
+}
+
+\setlength{\parindent}{0in}
+\setlength{\tabcolsep}{2pt}
+
+
+\title{CV}
+\author{Eduard Maximilian Fiedler}
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{minipage}{0.73\textwidth}
+\maketitle
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+	\hspace{2mm} 
+	\includegraphics[width=0.59\textwidth]{me2}
+\end{minipage}
+
+\section{Info}
+Ich studiere Maschinenbau an der University of Glasgow. Um mehr praktische Erfahrung zu sammeln, m{\"o}chte ich mich gerne im Bereich Herstellung bet{\"a}tigen.
+
+\vspace{.25cm}
+
+In meiner Kindheit habe ich in verschiedenen L{\"a}ndern gelebt und studiere deshalb in Schottland, da mein Englisch sich besser entwickelt hat als mein Deutsch.
+
+\vspace{.25cm}
+
+Mein aktueller Plan ist mein Bachelor abzuschlie{\ss}en, um als Ingenieur so fr{\"u}h wie m{\"o}glich zu arbeiten.
+
+
+\section{Ausbildung}
+
+\entry{2016--2020}{Bachelor of Engineering}{University of Glasgow}{-- Maschinenbaustudium}
+
+\entry{2015}{Australian Capital Tertiary Senior Secondary Certificate}{Australian International School Jakarta}{-- Australische Hochschulreife}
+
+
+\section{Auszeichnungen}
+
+\entry{2016--2017}{Engineering Excellence List}{University of Glasgow}{-- GPA von 20.33 aus 22 (First-class)}
+
+\section{Praktika}
+
+\entry{Fr{\"u}hling 2016}{Freiwilliges Praktikum}{PT. Siemens Indonesia}{-- Dampfturbinenherstellung\vspace{-.25cm} 
+	\begin{itemize}[leftmargin=*]
+		\setlength{\itemsep}{-3pt}
+	\item Arbeitern beim Bladefitting, Bohren, und Fr{\"a}sen unterst{\"u}tzt 
+			\item Pr{\"a}sentation f{\"u}r Siemens Product Simulation {\"u}ber Effizienz in der Fabrik
+	\end{itemize}	
+}
+
+\section{Besondere Kenntnisse}
+
+\nentry{Sprachen}{Deutsch und Englisch (Muttersprache)\\ Indonesisch (Grundkenntnisse)}
+
+\nentry{Fachlich}{CAD mit SolidWorks (Grundkenntnisse) \\ MATLAB (Grundkenntnisse)}
+
+\nentry{Allgemein}{Windows und MS-Office\\Markup auf {\LaTeX} und R Markdown\\Statistik auf R (Grundkenntnisse)}
+
+\vspace*{\fill} 
+\begin{minipage}{0.4\textwidth}
+	\today
+\end{minipage}
+\begin{minipage}{0.19\textwidth}
+	\flushright
+	\href{https://github.com/emfiedler/cv}{\textsc{source}}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\flushright
+	\includegraphics[width=0.35\textwidth]{unterschrift}
+\end{minipage}
+
+\end{document}
